@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        Dungeons and Dragons Character Creator
+    </header>
+    <main>
+        <div class="main-container">
+            <h2>Create New Character?</h2>
+            <form action="assets/characterCreator.php" method="POST">
+                <input type="text" name="createNewCharacterFirstName" id="createNewCharacterFirstName">
+                <input type="text" name="createNewCharacterLastName" id="createNewCharacterLastName">
+                <input type="submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        First Name: <?php echo $_POST["createNewCharacterFirstName"]; ?><br>
+        Last Name: <?php echo $_POST["createNewCharacterLastName"]; ?>
+    </footer>
+</body>
+</html>

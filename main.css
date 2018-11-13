@@ -4,6 +4,7 @@
     --headerColor: #9e0000;
     --bodyColor: #e0e0e0;
     --footerColor: #262626;
+    --canvasBackground: #333;
 }
 html, body{
     width: 100%;
@@ -41,6 +42,7 @@ main{
     flex-direction: row;
     text-align: center;
     justify-items: center;
+    justify-content: center;
 }
 main .clock-container{
     width: 100%;
@@ -51,7 +53,7 @@ main .clock-container{
     justify-content: center;
 }
 main canvas{
-    background-color: black;
+    background-color: var(--canvasBackground);
     height: 400px;
     width: 400px;
 }

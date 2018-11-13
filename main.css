@@ -35,6 +35,25 @@ main{
     grid-area: main;
     font-size: 1.2rem;
     background-color: var(--bodyColor);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-items: center;
+}
+main .clock-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+main canvas{
+    background-color: black;
+    height: 400px;
+    width: 400px;
 }
 footer{
     grid-area: footer;

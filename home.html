@@ -16,12 +16,22 @@
     <main>
         <div class="main-container">
             <h2>Create New Character?</h2>
-            <form action="assets/characterCreator.php" method="POST">
+            <form action="assets/characterCreator.php" target="_blank"method="POST">
                 <input type="text" name="createNewCharacterFirstName" id="createNewCharacterFirstName">
                 <input type="text" name="createNewCharacterLastName" id="createNewCharacterLastName">
                 <input type="submit">
             </form>
         </div>
+        <div class="clock-container">
+            <canvas id="clock-canvas">
+
+            </canvas>
+        </div>
+        <!-- <div class="svg">
+            <svg width="100px" height="100px">
+                <rect height="100px" width="100px" style="fill: white; stroke-width: 2px; stroke: black;"/>
+            </svg>
+        </div> -->
     </main>
     <footer>
         First Name: <?php echo $_POST["createNewCharacterFirstName"]; ?><br>

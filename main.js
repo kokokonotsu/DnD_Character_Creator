@@ -1,0 +1,16 @@
+var numArray = ["Candy", "Apricots", "Spinach"];
+
+console.log(numArray.map(newArray => newArray.length));
+
+function clock(){
+    var canvas = document.getElementById("clock-canvas");
+    var ctx = canvas.getContext("2d");
+    var radius = canvas.height / 2;
+    ctx.translate(radius, radius);
+    //Restate the radius
+    radius = radius * 0.9;
+    drawClock();
+    function drawClock(){
+        ctx.ard(0, 0, radius, 0, 2 * Math.PI);
+    }
+}
